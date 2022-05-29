@@ -172,6 +172,6 @@ color: #333;
   width:224px;
 }
 
-.check-list .task-item.edit-mode label {
+.check-list .task-item.edit-mode .task-lable {
   display: none;
 }
