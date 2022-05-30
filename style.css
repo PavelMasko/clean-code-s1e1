@@ -164,7 +164,7 @@ color: #333;
 
 .check-list .check-list__item.edit-mode .check-list__input {
   display: inline-block;
-  width:224px;
+  width: 224px;
 }
 
 .check-list .check-list__item.edit-mode .check-list__lable {
