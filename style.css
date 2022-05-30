@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header-image {
+.header__image {
   width: 100%;
 }
 
-.header .more-information {
+.header__more-information {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-row {
+.section-task__row {
   display: flex;
 }
 
@@ -49,12 +49,12 @@
   padding: 0px;
 }
 
-.task-item, 
-.title {
+.check-list__item, 
+.section-title {
   list-style: none;
 }
 
-.checkbox, 
+.check-list__checkbox, 
 .task{
   outline: none;
 }
@@ -74,8 +74,7 @@
 }
 
 /* Heading */
-.title, 
-.new-task-label {
+.section-title{
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,8 +84,13 @@
   text-transform: uppercase;
 }
 
-.task-input, 
-.task-add {
+.section-task__tatle-margin {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.check-list__input, 
+.section-task__add {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -104,17 +108,12 @@ color: #333;
 }
 
 /* New Task */
-.new-task-label {
-  display: block;
-  margin: 0 0 20px;
-}
-
-.task-add {
+.section-task__add {
   width: 318px;
 }
 
 /* Task list */
-.task-item {
+.check-list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -123,55 +122,51 @@ color: #333;
   align-items: center;
 }
 
-.checkbox, 
-.task-lable, 
-.task-input, 
-.edit-btn, 
-.delete-btn{
+.check-list__item-align {
   vertical-align: middle;
 }
 
-.checkbox {
+.check-list__checkbox {
   margin: 0 10px;
 }
 
-.task-lable {
+.check-list__lable {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-input {
+.check-list__input {
   width: 226px;
 }
 
-.delete-btn .remove-image {
+.check-list__delete-btn .remove-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-btn .remove-image:hover {
+.check-list__delete-btn .remove-image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.check-list#completed-tasks .task-lable {
+.check-list#completed-tasks .check-list__lable {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.check-list .task-input {
+.check-list .check-list__input {
   display: none;
 }
 
-.check-list .task-item.edit-mode .task-input {
+.check-list .check-list__item.edit-mode .check-list__input {
   display: inline-block;
   width:224px;
 }
 
-.check-list .task-item.edit-mode .task-lable {
+.check-list .check-list__item.edit-mode .check-list__lable {
   display: none;
 }

@@ -7,45 +7,45 @@
   </head>
   <body class="page">
     <header class="header">
-      <img class="header-image" alt="eisenhower matrix" src="./eisenhower-matrix.jpg" >
-      <a class="more-information" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+      <img class="header__image" alt="eisenhower matrix" src="./eisenhower-matrix.jpg" >
+      <a class="header__more-information" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section id="adding-list">
-        <h3 class="title new-task-label">Add Item</h3>
-        <div class="task-row">
-          <input class="task task-add" id="new-task" type="text">
+      <section class="section-task">
+        <h3 class="section-title section-task__tatle-margin">Add Item</h3>
+        <div class="section-task__row">
+          <input class="task section-task__add" id="new-task" type="text">
           <button class="btn">Add</button>
         </div>
       </section>
-      <section>
-        <h3 class="title">Todo</h3>
-        <ul id="incomplete-tasks" class="check-list">
-          <li class="task-item">
-            <input class="checkbox" type="checkbox">
-            <label class="task task-lable">Pay Bills</label>
-            <input class="task task-input"type="text" >
-            <button class="btn edit-btn">Edit</button>
-            <button class="btn delete-btn"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
+      <section class="section-todo">
+        <h3 class="section-title">Todo</h3>
+        <ul class="check-list" id="incomplete-tasks">
+          <li class="check-list__item">
+            <input class="check-list__checkbox check-list__item-align" type="checkbox">
+            <label class="task check-list__lable check-list__item-align">Pay Bills</label>
+            <input class="task check-list__input check-list__item-align" type="text" >
+            <button class="btn check-list__edit-btn check-list__item-align">Edit</button>
+            <button class="btn check-list__delete-btn check-list__item-align"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
           </li>
-          <li class="task-item edit-mode">
-            <input class="checkbox" type="checkbox">
-            <label class="task task-lable">Go Shopping</label>
-            <input class="task task-input" type="text" value="Go Shopping" >
-            <button class="btn edit-btn">Save</button>
-            <button class="btn delete-btn"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
+          <li class="check-list__item edit-mode">
+            <input class="check-list__checkbox" type="checkbox">
+            <label class="task check-list__lable check-list__item-align">Go Shopping</label>
+            <input class="task check-list__input check-list__item-align" type="text" value="Go Shopping" >
+            <button class="btn check-list__edit-btn check-list__item-align">Save</button>
+            <button class="btn check-list__delete-btn check-list__item-align"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
           </li>
         </ul>
       </section>   
-      <section>
-        <h3 class="title">Completed</h3>
-        <ul id="completed-tasks" class="check-list">
-          <li class="task-item">
-            <input class="checkbox" type="checkbox" checked>
-            <label class="task task-lable">See the Doctor</label>
-            <input class="task task-input" type="text" >
-            <button class="btn edit-btn">Edit</button>
-            <button class="btn delete-btn"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
+      <section class="section-completed">
+        <h3 class="section-title">Completed</h3>
+        <ul class="check-list" id="completed-tasks">
+          <li class="check-list__item">
+            <input class="check-list__checkbox" type="checkbox" checked>
+            <label class="task check-list__lable check-list__item-align">See the Doctor</label>
+            <input class="task check-list__input check-list__item-align" type="text" >
+            <button class="btn check-list__edit-btn check-list__item-align">Edit</button>
+            <button class="btn check-list__delete-btn check-list__item-align"><img class="remove-image" alt="remove button" src="./remove.svg"></button>
           </li>
         </ul>
       </section>
