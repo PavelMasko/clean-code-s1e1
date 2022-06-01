@@ -104,7 +104,7 @@
 }
 
 .task:focus {
-color: #333;
+  color: #333;
 }
 
 /* New Task */
